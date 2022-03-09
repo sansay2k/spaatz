@@ -674,6 +674,133 @@ nav {
   margin-bottom: 10px;
 }
 
+.section__teams {
+  padding: 159px 50px;
+}
+
+.teams__title {
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1B2534;
+}
+
+.teams__brands {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teams__brands_brand {
+  height: 100%;
+}
+
+.teams__cards {
+  margin-top: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.teams__card {
+  max-width: 432px;
+  margin-bottom: 80px;
+}
+
+.teams__card_img {
+  display: block;
+  border-radius: 30px;
+}
+
+.teams__card_title {
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #1B2534;
+  margin-top: 27px;
+}
+
+.teams__card_text {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ABABAB;
+  margin-top: 27px;
+}
+
+.teams__card_author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 37px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.teams__card_author-img {
+  border-radius: 100%;
+  max-width: 66px;
+  max-height: 66px;
+  margin-right: 20px;
+}
+
+.teams__card_author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teams__card_author-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 336px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teams__card_author-name {
+  max-width: 336px;
+  font-size: 20px;
+  line-height: 28px;
+  height: 28px;
+  color: #1B2534;
+}
+
+.teams__card_author-date,
+.teams__card_author-profile {
+  font-size: 18px;
+  line-height: 29px;
+  color: #ABABAB;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #29A0F5;
+  margin: 0 10px;
+  border-radius: 100%;
+}
+
 @media (max-width: 1750px) {
   .productivity__static {
     max-width: 600px;
@@ -802,6 +929,7 @@ nav {
   }
 
   .software__title {
+    font-size: 45px;
     text-align: center;
   }
 
@@ -859,6 +987,7 @@ nav {
   }
 
   .more__title {
+    font-size: 45px;
     text-align: center;
   }
 
@@ -887,6 +1016,20 @@ nav {
 
   .productivity__wrapper_image {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 1007px) {
+  .teams__card_img {
+    margin: 0 auto;
+  }
+
+  .teams__card_title {
+    text-align: center;
+  }
+
+  .teams__card_text {
+    text-align: center;
   }
 }
 
@@ -1123,6 +1266,18 @@ nav {
 
   .more_device {
     display: none;
+  }
+
+  .teams__card {
+    width: 100%;
+  }
+
+  .teams__card_img {
+    max-width: 300px;
+  }
+
+  .teams__card_title {
+    font-size: 30px;
   }
 }
 

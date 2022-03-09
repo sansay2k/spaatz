@@ -1,0 +1,123 @@
+.section__teams {
+    padding: 159px 50px;
+}
+
+.teams {
+    &__title {
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $darkColor;
+    }
+
+    &__brands {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 100px;
+        align-items: center;
+
+        &_brand {
+            height: 100%;
+        }
+    }
+
+    &__cards {
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        max-width: 432px;
+        margin-bottom: 80px;
+        @media(max-width:550px) {
+            width: 100%;
+        }
+
+        &_img {
+            display: block;
+            border-radius: 30px;
+            @media(max-width:1007px) {
+                margin: 0 auto;
+            }
+            @media(max-width:550px) {
+                max-width: 300px;
+            }
+        }
+
+        &_title {
+            font-size: 35px;
+            line-height: 42px;
+            text-transform: capitalize;
+            color: $darkColor;
+            margin-top: 27px;
+            @media(max-width:1007px) {
+                text-align: center;
+            }
+            @media(max-width:550px) {
+                font-size: 30px;
+            }
+        }
+
+        &_text {
+            font-size: 20px;
+            line-height: 32px;
+            color: #ABABAB;
+            margin-top: 27px;
+            @media(max-width:1007px) {
+                text-align: center;
+            }
+        }
+
+        &_author {
+            display: flex;
+            width: 100%;
+            margin-top: 37px;
+            flex-wrap: wrap;
+
+            &-img {
+                border-radius: 100%;
+                max-width: 66px;
+                max-height: 66px;
+                margin-right: 20px;
+            }
+
+            &-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-more {
+                display: flex;
+                max-width: 336px;
+                align-items: center;
+            }
+
+            &-name {
+                max-width: 336px;
+                font-size: 20px;
+                line-height: 28px;
+                height: 28px;
+                color: $darkColor;
+            }
+
+            &-date, &-profile {
+                font-size: 18px;
+                line-height: 29px;
+                color: #ABABAB;
+            }
+        }
+    }
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: $blueColor;
+    margin: 0 10px;
+    border-radius: 100%;
+}
