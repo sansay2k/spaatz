@@ -1,0 +1,67 @@
+.main {
+    &__bg {
+        background: url(../img/first_bg.png) center (center/cover) no-repeat;
+        margin-top: -200px;
+        min-height: 1086px;
+        z-index: -1;
+        padding: 200px;
+        @media (max-width: $breakpoint992) {
+            padding: 200px 0 50px 0;
+            padding-bottom: 50px;
+            min-height: 786px;
+        }
+        @media (max-width: $breakpoint480) {
+            min-height: 500px;
+        }
+    }
+    &__header {
+        color: $darkColor;
+        margin-top: 100px;
+        text-align: center;
+        font-size: 80px;
+        line-height: 104px;
+        text-align: center;
+        text-transform: capitalize;
+        span {
+            color: $blueColor;
+        }
+        @media (max-width: $breakpoint1450) {
+            font-size: 70px;
+        }
+        @media (max-width: $breakpoint992) {
+            text-align: center;
+            font-size: 60px;
+            line-height: 80px;
+            margin-top: 75px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 50px;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color: $darkColor;
+        height: 72px;
+        width: 232px;
+        padding: 25px 22px;
+        font-size: 20px;
+        transition: 0.4s all;
+        margin: 0 auto;
+        margin-top: 25px;
+
+        &:hover {
+            background-color: rgb(230, 230, 230);
+            padding-right: 5px;
+        }
+        @media (max-width: $breakpoint768) {
+            margin-top: 75px;
+        }
+    }
+}

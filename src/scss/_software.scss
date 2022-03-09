@@ -1,0 +1,123 @@
+.section__software {
+    min-height: 1243px;
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.software {
+    &__static {
+        display: block;
+        margin: 0 auto;
+        margin-top: -380px;
+        width: 100%;
+        @media (max-width: $breakpoint1450) {
+            width: 900px;
+            margin-top: -150px;
+        }
+        @media (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__text {
+        width: 581px;
+        @media (max-width: $breakpoint1450) {
+            width: 500px;
+        }
+        @media (max-width: $breakpoint1100) {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin-top: 175px;
+        font-size: 65px;
+        line-height: 78px;
+        text-transform: capitalize;
+        color: $darkColor;
+        span {
+            color: $blueColor;
+        }
+        @media (max-width: $breakpoint1450) {
+            font-size: 55px;
+            line-height: 60px;
+        }
+        @media (max-width: $breakpoint1100) {
+            text-align: center;
+        }
+    }
+    &__descr {
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: capitalize;
+        color: $darkColor;
+        margin-top: 27px;
+        margin-bottom: 30px;
+        @media (max-width: $breakpoint1100) {
+            text-align: center;
+        }
+    }
+    &__img {
+        display: flex;
+        margin-top: 160px;
+        width: 645px;
+        height: 558px;
+        @media (max-width: $breakpoint1450) {
+            width: 550px;
+            height: 475px;
+        }
+        @media (max-width: $breakpoint1100) {
+            width: 490px;
+            height: 425px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        @media (max-width: 550px) {
+            display: none;
+        }
+    }
+    &__skill {
+        display: flex;
+        margin-top: 20px;
+        &-img {
+            height: 95px;
+            width: 95px;
+            
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 42px;
+            color: $darkColor;
+            margin-left: 20px;
+            width: 100%;
+            @media (max-width: $breakpoint1100) {
+                font-size: 25px;
+                width: 75%;
+            }  
+        }
+        &-descr {
+            font-size: 20px;
+            line-height: 32px;
+            color: #606060;
+            margin-left: 20px;
+            @media (max-width: $breakpoint1100) {
+                font-size: 18px;
+                width: 75%;
+            }
+        }
+        @media (max-width: $breakpoint1100) {
+            display: flex;
+            width: 100% ;
+            justify-content: center;
+            &-text {
+                width: 445px;
+            }
+        }
+    }
+}
