@@ -106,6 +106,17 @@
         font-size: 35px;
         line-height: 46px;
         color: $darkColor;
+        transition: 0.4s all;
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        @media(max-width:1450px) {
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
 
         &_wrapper {
             display: flex;
@@ -233,14 +244,16 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 480px;
-    min-height: 270px;
+    max-height: 250px;
 }
 .tool__img__wrapper {
     display: flex;
     justify-content: space-between;
     min-width: 250px;
+    margin-top: 30px;
     width: 100%;
     flex-wrap: wrap;
+    // margin-top: 20px;
     @media (max-width: 1100px) {
         min-width: 150px;
     }    

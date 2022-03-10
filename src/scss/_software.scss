@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $breakpoint992) {
+        min-height: 820px;
+        padding-bottom: 40px;
+    }
 }
 
 .software {

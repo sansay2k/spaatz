@@ -1,5 +1,9 @@
 .section__teams {
     padding: 159px 50px;
+    @media(max-width:550px) {
+        padding-bottom: 50px;
+    }
+    
 }
 
 .teams {
@@ -34,6 +38,22 @@
     &__card {
         max-width: 432px;
         margin-bottom: 80px;
+        border-radius: 30px;
+        padding: 5px;
+        transition: 0.4s all;
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @media(max-width:1450px) {
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+
         @media(max-width:550px) {
             width: 100%;
         }
@@ -41,11 +61,13 @@
         &_img {
             display: block;
             border-radius: 30px;
-            @media(max-width:1007px) {
-                margin: 0 auto;
-            }
+            margin: 0 auto;
+
             @media(max-width:550px) {
-                max-width: 300px;
+                max-width: 250px;
+            }
+            @media(max-width:450px) {
+                max-width: 200px;
             }
         }
 
@@ -55,9 +77,11 @@
             text-transform: capitalize;
             color: $darkColor;
             margin-top: 27px;
+
             @media(max-width:1007px) {
                 text-align: center;
             }
+
             @media(max-width:550px) {
                 font-size: 30px;
             }
@@ -68,6 +92,7 @@
             line-height: 32px;
             color: #ABABAB;
             margin-top: 27px;
+
             @media(max-width:1007px) {
                 text-align: center;
             }
@@ -95,6 +120,9 @@
                 display: flex;
                 max-width: 336px;
                 align-items: center;
+                @media(max-width:550px) {
+                    max-width: 230px;
+                }
             }
 
             &-name {
@@ -105,11 +133,37 @@
                 color: $darkColor;
             }
 
-            &-date, &-profile {
+            &-date,
+            &-profile {
                 font-size: 18px;
                 line-height: 29px;
                 color: #ABABAB;
+                @media(max-width:550px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px 30px;
+        width: 227px;
+        height: 72px;
+        background-color: $blueColor;
+        color: #ffffff;
+        border: 1px solid #29A0F5;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 0 auto;
+        font-size: 20px;
+        transition: 0.4s all;
+        &:hover {
+            background-color: #2387cf;
+            padding-right: 15px;
         }
     }
 }

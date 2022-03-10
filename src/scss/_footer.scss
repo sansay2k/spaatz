@@ -1,4 +1,106 @@
 // Footer
 footer {
-    display: block;
+    display: flex;
+    padding: 148px 0 70px 0;
+    background-color: $darkColor;
+}
+
+.footer {
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        &_autor {
+            color: #ABABAB;
+            font-size: 18px;
+            span {
+                color: $blueColor;
+            }
+            a {
+                color: $blueColor;
+            }
+        }
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(2) {
+            padding: 40px 70px;
+            background-color: #283343;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            color: #ffffff;
+            margin-bottom: 2px;
+            gap: 105px;
+            font-size: 20px;
+            flex-wrap: wrap;
+            a,
+            li {
+                color: #ABABAB;
+                margin-top: 17px;
+                font-size: 18px;
+                transition: 0.4s all;
+
+                &:hover {
+                    color: $blueColor;
+                }
+            }
+        }
+    }
+
+    &__descr {
+        margin-top: 22px;
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 264px;
+        color: #ABABAB;
+    }
+
+    &__logo_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        max-width: 150px;
+    }
+
+    &__img {
+        z-index: 1;
+        position: relative;
+        max-width: 337px;
+        max-height: 327px;
+        width: 100%;
+        z-index: 2;
+
+        &-item {
+            max-width: 337px;
+            max-height: 327px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        &-play {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            cursor: pointer;
+        }
+    }
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: #ABABAB;
+    margin-top: 12px;
+    margin-bottom: 19px;
 }
